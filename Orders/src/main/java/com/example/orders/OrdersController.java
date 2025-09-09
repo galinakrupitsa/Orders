@@ -10,7 +10,10 @@ public class OrdersController {
         this.ordersService = ordersService;
     }
     @PostMapping("/orders/{orderId}")
-    public String createOrder(@PathVariable String orderId, @RequestBody OrdersClass order) {
-        return ordersService.myMetod(orderId, order);
+    public String createOrder(@PathVariable String orderId,
+                              @RequestParam String country,
+                              @RequestParam String city,
+                              @RequestBody OrdersClass order) {
+        return ordersService.myMetod(orderId, country, city, order);
     }
 }

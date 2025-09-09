@@ -1,4 +1,4 @@
-curl --location "http://localhost:8080/api/orders/123" \
+curl --location "http://localhost:8080/api/orders/123?country=Uzbekistan&city=Tashkent" \
 --header "Content-Type: application/json" \
 --data '{
     "productName": "Laptop",
