@@ -1,4 +1,4 @@
-curl --location "http://localhost:8080/api/users/123å?role=admin" \
+curl --location "http://localhost:8080/api/users/123?role=admin" \
 --header "Content-Type: application/json" \
 --data '{
     "username": "galina",
