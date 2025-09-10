@@ -13,7 +13,7 @@ public UserController(UserService userService) {
 @PostMapping("/users/{userId}")
     public String addUser(@RequestParam String role,
                           @RequestBody UserClass userClass) {
-    return "Роль " + role + " Имя " + userClass.getUserName() + " почта " + userClass.getEmail()
+    return "Роль " + role  + " Имя " + userClass.getUserName() + " почта " + userClass.getEmail()
             + " Возрат " + userClass.getAge();
 }
 
