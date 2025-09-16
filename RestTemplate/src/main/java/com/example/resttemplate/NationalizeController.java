@@ -17,5 +17,6 @@ public class NationalizeController {
     public ResponseEntity<NationalizeResponse> getCountry(@RequestParam String name) {
         NationalizeResponse response = nationalizeService.getCountryByName(name);
         return ResponseEntity.ok(response);
+
     }
 }
